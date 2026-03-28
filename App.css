@@ -1,0 +1,64 @@
+/* Import global theme */
+@import './theme.css';
+
+/* App Container */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  padding: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Page Title */
+h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-xxl);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+table th,
+table td {
+  padding: var(--spacing-md);
+  text-align: left;
+}
+
+table th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(236, 247, 236, 0.5);
+}
+
+table tr:hover {
+  background-color: rgba(46, 125, 50, 0.05);
+}
+
+table td {
+  border-bottom: 1px solid var(--border-color);
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
